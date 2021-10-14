@@ -6,7 +6,7 @@ import esPrimo from './mod/mod-02-32-DRodriguez'
  * Nombre: Daniel Rodríguez Fernández
  * GitHub: idanirf
  * Fecha: 13/10/2021
- * Descripción: Programa para saber si un numero es primo..
+ * Descripción: Programa para saber los numeros primos entre 1 y 100.
  */
 
 //Funcion del programa

@@ -1,5 +1,5 @@
 /**
- * Funcion que devuelve si un numero es primo o no.
+ * Funcion que devuelve los numeros primos que hay entre 1 y 100.
  * @param numero Numero para saber si es primo.
  * @returns es primo o no.
  */

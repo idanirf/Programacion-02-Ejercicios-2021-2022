@@ -10,7 +10,7 @@ function esPrimo(numero: number) {
     if (esPrimo) {
        
         let otroDivisor = false;
-        let i = 2;
+        let i = 3;
         while (!otroDivisor && i < numero) {
             let resto = numero%i;
             otroDivisor = resto == 0;

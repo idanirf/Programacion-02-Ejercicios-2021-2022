@@ -13,7 +13,7 @@ import aux from './mod/mod-02-31-DRodriguez'
 let esPrimo: number
 esPrimo = read.questionInt("Dime el numero del que quieres saber si es primo: ");
 
-if (esPrimo) {
+if (aux.esPrimo) {
   console.log("El número es primo");
 }
 else {
