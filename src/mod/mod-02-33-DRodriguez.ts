@@ -1,7 +1,8 @@
 /**
- * Funcion que devuelve si un numero es primo o no.
- * @param numero Numero para saber si es primo.
- * @returns es primo o no.
+ * Funcion para devolver un numero aleatorio.
+ * @param a numero inicial.
+ * @param b numero final.
+ * @returns numero aleatorio truncado.
  */
 
 function randomEntre(a:number,b:number) {
