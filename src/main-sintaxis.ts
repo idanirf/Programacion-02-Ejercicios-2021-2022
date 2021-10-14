@@ -1,20 +1,10 @@
-/**
- * Nombre: José Luis González
- * GitHub: joseluisgs
- * Fecha: 06/10/2021
- * Descripción: Descripción de sistáxis básica de TypeScript
- */
-
 // Zona de declaración de librerías y módulos propios o del sistema
 // ers importante que sepas que aunque nos apoyemos en determinadas librerías hay que saber implementar determinadas operaciones
 import read from 'readline-sync'; // --> Librería para leer datos por consola. Puedes leer sobre ella y aprender a usarla en: https://github.com/anseki/readline-sync
 import chalk from 'chalk'; // --> Podemos obtener colores para decorar nuestra salida. Puedes leer sobre ella y aprender a usarla en: https://github.com/chalk/chalk
 
-// También podemos importar nuestros propios módulos
-import utils from './mod/utils'; // --> funciones o procemientos de utilidad. Lo he querido llamoar así
 
-
-// Zona de declaración de variables y constantes.
+// Zona de declaración de variables y constantes. 
 // Variables con let y constante con const
 // Tipos: number (con signo y sin signo incluyendo decimales), string (cadenas y carácteres) y boolean (true o false)
 let edad = 10;
@@ -30,15 +20,6 @@ console.log("Tu edad es de " + edad + " años");
 // Salida con colores, le decimos a chalk el color
 console.log(chalk.blue('Hola') + ' Clase' + chalk.red('!'));
 
-// Podemos llamar a nuestras funciones y procedimientos
-console.log(saludo("Mundo"));
-
-// Incluso de nuestro módulo importado
-utils.presentacion();
-console.log("¿Es Primo 4?: " + utils.esPrimo(4));
-console.log("¿Es Primo 57?: " + utils.esPrimo(57));
-console.log("¿Es Primo 97?: " + utils.esPrimo(97));
-
 // Entrada de texto conb read.question. Siempre se lee un string
 nombre = read.question('¿Cómo te llamas? ');
 console.log('Tu nombre: ' + nombre);
@@ -53,7 +34,7 @@ edad = read.questionInt("¿Cuál es tu edad directamente? ");
 verdadero = Boolean(read.keyInYN());
 // Podemos poner verdadero o verdadero==true
 if (verdadero) {
-  console.log('Sí has pulsado Y');
+    console.log('Sí has pulsado Y');
 } else {
   console.log('Has pulsado N')
 }
@@ -70,7 +51,7 @@ console.log(chalk.blue.bgYellowBright.bold('¡Hola: ' + nombre + ' ' + apellido 
 /*
   Esto es un comentario de bloque de código
   Si quiero comentar varias líneas debo poner /* en cada una de de ellas
-  Y cerrarlo con
+  Y cerrarlo con 
 */
 
 // Condicionales
@@ -87,7 +68,7 @@ if (edad >= 10){
   console.log('Menor que 10 y mayor que 5');
 } else {
   console.log('Menor que 5');
-}
+} 
 
 // Condicionales múltiples con swich. El default es el caso por defecto. Break para salir
 switch (edad) {
@@ -120,15 +101,3 @@ do {
 for (let i = 0; i < 10; i++) {
   console.log('Contador: ' + i);
 }
-
-/**
- * Todo programa debe emezar con una funcion main()
- */
-
-// Podemos definir aquí las funciones que usaremos
-function saludo(mensaje: string): string {
-  return "Hola, " + mensaje;
-}
-
-
-
