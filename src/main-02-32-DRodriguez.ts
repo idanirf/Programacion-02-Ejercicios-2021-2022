@@ -9,14 +9,19 @@ import esPrimo from './mod/mod-02-32-DRodriguez'
  * Descripción: Programa para saber si un numero es primo..
  */
 
-numero= read.questionInt
 //Funcion del programa
-function numero() {
+function aux() {
   for (let i = 1; i <= 100; i++) {
-    if (esPrimo(i)) {
+    if (esPrimo.esPrimo(i)) {
       console.log("Es un numero primo: " +i);
     } else {
       console.log("No es un numero primo: " +i);
     }
   }
 }
+function main() {
+  aux();
+  //ejercicio_33();
+}
+
+main();

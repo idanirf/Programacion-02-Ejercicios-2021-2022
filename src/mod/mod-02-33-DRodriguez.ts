@@ -6,7 +6,7 @@
 
 function randomEntre(a:number,b:number) {
     let rand = Math.random();
-    return Math.round(rand*b + a);
+    return Math.trunc(rand*b + a);
 }
 
 export default {randomEntre};
